@@ -1,102 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>10 Componentes Flexbox + BEM</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 Componentes Flexbox + BEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="page-header">
-    <h1 class="page-header__title">5 Componentes · Flexbox + BEM</h1>
-  </header>
+    <header class="page-header">
+        <h1 class="page-header__title">5 Componentes · Flexbox + BEM</h1>
+    </header>
 
-  <!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
        1. BARRA DE NAVEGACIÓN
   ══════════════════════════════════════════ -->
-  <section class="demo-section">
-    <p class="demo-label">01 · Barra de Navegación</p>
+    <section class="demo-section">
+        <p class="demo-label">01 · Barra de Navegación</p>
 
-    <nav class="navbar">
-      <a href="#" class="navbar__brand">Marca</a>
-      <ul class="navbar__menu">
-        <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Portafolio</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link navbar__link--cta">Contacto</a></li>
-      </ul>
-    </nav>
-  </section>
+        <nav class="navbar">
+            <a href="#" class="navbar__brand">Marca</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Portafolio</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link navbar__link--cta">Contacto</a></li>
+            </ul>
+        </nav>
+    </section>
 
-  <!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
        2. TARJETA DE PRODUCTO
   ══════════════════════════════════════════ -->
-  <section class="demo-section">
-    <p class="demo-label">02 · Tarjeta de Producto</p>
+    <section class="demo-section">
+        <p class="demo-label">02 · Tarjeta de Producto</p>
 
-    <div class="product-card">
-      <div class="product-card__image">
-        <span class="product-card__badge">Nuevo</span>
-      </div>
-      <div class="product-card__body">
-        <h3 class="product-card__title">Auriculares Pro X</h3>
-        <p class="product-card__description">Sonido envolvente 360° con cancelación activa de ruido y 40 h de autonomía.</p>
-        <span class="product-card__price">$189.99</span>
-      </div>
-      <button class="product-card__btn">Añadir al carrito</button>
-    </div>
-  </section>
+        <div class="product-card">
+            <div class="product-card__image">
+                <span class="product-card__badge">Nuevo</span>
+            </div>
+            <div class="product-card__body">
+                <h3 class="product-card__title">Auriculares Pro X</h3>
+                <p class="product-card__description">Sonido envolvente 360° con cancelación activa de ruido y 40 h de
+                    autonomía.</p>
+                <span class="product-card__price">$189.99</span>
+            </div>
+            <button class="product-card__btn">Añadir al carrito</button>
+        </div>
+    </section>
 
-  <!-- ══════════════════════════════════════════
+    <!-- ══════════════════════════════════════════
        3. GALERÍA DE IMÁGENES
   ══════════════════════════════════════════ -->
-  <section class="demo-section">
-    <p class="demo-label">03 · Galería de Imágenes</p>
+    <section class="demo-section">
+        <p class="demo-label">03 · Galería de Imágenes</p>
 
-    <div class="gallery">
-      <div class="gallery__item gallery__item--tall">1</div>
-  <img src="/img/foto 1.jpg" alt="Foto 1" />
-</div>
-      <div class="gallery__item">2</div>
-      
-  <img src="/img/foto 2.jpg" alt="Foto 1" />
-      <div class="gallery__item">3</div>
-      <div class="gallery__item gallery__item--wide">4</div>
-      <div class="gallery__item">5</div>
-      <div class="gallery__item">6</div>
-    </div>
-  </section>
+        <div class="gallery">
+            <div class="gallery__item gallery__item--tall">1</div>
+            <img src="/img/foto 1.jpg" alt="Foto 1" />
+        </div>
+        <div class="gallery__item">2</div>
 
-  <!-- ══════════════════════════════════════════
+        <img src="/img/foto 2.jpg" alt="Foto 1" />
+        <div class="gallery__item">3</div>
+        <div class="gallery__item gallery__item--wide">4</div>
+        <div class="gallery__item">5</div>
+        <div class="gallery__item">6</div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
        4. FORMULARIO DE CONTACTO
   ══════════════════════════════════════════ -->
-  <section class="demo-section">
-    <p class="demo-label">04 · Formulario de Contacto</p>
+    <section class="demo-section">
+        <p class="demo-label">04 · Formulario de Contacto</p>
 
-    <form class="contact-form">
-      <div class="contact-form__row">
-        <div class="contact-form__field">
-          <label class="contact-form__label" for="name">Nombre</label>
-          <input class="contact-form__input" id="name" type="text" placeholder="Tu nombre" />
-        </div>
-        <div class="contact-form__field">
-          <label class="contact-form__label" for="email">Correo</label>
-          <input class="contact-form__input" id="email" type="email" placeholder="correo@ejemplo.com" />
-        </div>
-      </div>
-      <div class="contact-form__field contact-form__field--full">
-        <label class="contact-form__label" for="subject">Asunto</label>
-        <input class="contact-form__input" id="subject" type="text" placeholder="Asunto del mensaje" />
-      </div>
-      <div class="contact-form__field contact-form__field--full">
-        <label class="contact-form__label" for="message">Mensaje</label>
-        <textarea class="contact-form__input contact-form__input--textarea" id="message" placeholder="Escribe tu mensaje aquí..."></textarea>
-      </div>
-      <button class="contact-form__btn" type="submit">Enviar mensaje</button>
-    </form>
-  </section>
+        <form class="contact-form">
+            <div class="contact-form__row">
+                <div class="contact-form__field">
+                    <label class="contact-form__label" for="name">Nombre</label>
+                    <input class="contact-form__input" id="name" type="text" placeholder="Tu nombre" />
+                </div>
+                <div class="contact-form__field">
+                    <label class="contact-form__label" for="email">Correo</label>
+                    <input class="contact-form__input" id="email" type="email" placeholder="correo@ejemplo.com" />
+                </div>
+            </div>
+            <div class="contact-form__field contact-form__field--full">
+                <label class="contact-form__label" for="subject">Asunto</label>
+                <input class="contact-form__input" id="subject" type="text" placeholder="Asunto del mensaje" />
+            </div>
+            <div class="contact-form__field contact-form__field--full">
+                <label class="contact-form__label" for="message">Mensaje</label>
+                <textarea class="contact-form__input contact-form__input--textarea" id="message"
+                    placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <button class="contact-form__btn" type="submit">Enviar mensaje</button>
+        </form>
+    </section>
 
- 
+    <!-- ══════════════════════════════════════════ 9. SECCIÓN DE PRECIOS ══════════════════════════════════════════ -->
+    <section class="demo-section">
+        <p class="demo-label">09 · Sección de Precios</p>
+        <div class="pricing">
+            <div class="pricing__card">
+                <h3 class="pricing__plan">Básico</h3>
+                <p class="pricing__amount">$9<span class="pricing__period">/mes</span></p>
+                <ul class="pricing__features">
+                    <li>5 proyectos</li>
+                    <li>10 GB almacenamiento</li>
+                    <li>Soporte por email</li>
+                </ul> <button class="pricing__btn">Elegir plan</button>
+            </div>
+            <div class="pricing__card pricing__card--featured"> <span class="pricing__badge">Popular</span>
+                <h3 class="pricing__plan">Pro</h3>
+                <p class="pricing__amount">$29<span class="pricing__period">/mes</span></p>
+                <ul class="pricing__features">
+                    <li>Proyectos ilimitados</li>
+                    <li>100 GB almacenamiento</li>
+                    <li>Soporte prioritario 24/7</li>
+                </ul> <button class="pricing__btn pricing__btn--dark">Elegir plan</button>
+            </div>
+            <div class="pricing__card">
+                <h3 class="pricing__plan">Enterprise</h3>
+                <p class="pricing__amount">$99<span class="pricing__period">/mes</span></p>
+                <ul class="pricing__features">
+                    <li>Todo lo de Pro</li>
+                    <li>1 TB almacenamiento</li>
+                    <li>Gerente de cuenta dedicado</li>
+                </ul> <button class="pricing__btn">Elegir plan</button>
+            </div>
+        </div>
+    </section>
+    <!-- ══════════════════════════════════════════ 10. SIDEBAR DE NAVEGACIÓN ══════════════════════════════════════════ -->
+    <section class="demo-section">
+        <p class="demo-label">10 · Sidebar de Navegación</p>
+        <aside class="sidebar"> <a href="#" class="sidebar__item sidebar__item--active"> <span
+                    class="sidebar__icon">⌂</span> <span class="sidebar__label">Dashboard</span> </a> <a href="#"
+                class="sidebar__item"> <span class="sidebar__icon">◈</span> <span
+                    class="sidebar__label">Proyectos</span> </a> <a href="#" class="sidebar__item"> <span
+                    class="sidebar__icon">✉</span> <span class="sidebar__label">Mensajes</span> </a> <a href="#"
+                class="sidebar__item"> <span class="sidebar__icon"
